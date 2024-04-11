@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Img/faviconhon.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+       <div class="header">
+        <img src="Img/Logo.png" alt="Logo Alura">
+
+       </div> 
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptar">
+                 <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí" onkeypress="retun" sololetras (event)></textarea>
+            </div>
+            <div class="solucion">
+                <textarea name="resolucion" class="resolucion" id="resolucion" cols="30" rows="10"></textarea>
+            <div class="botones2">
+                <input type="button" class="btn-copiar" value="Copiar" onclick ="copiar()"/>
+                <input type="button" class="btn-reiniciar" value="Reiniciar" onclick ="reiniciar()"/>
+            </div>
+               
+            </div>
+            <div class="terminos">
+                <p> Solo letras minúsculas, sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+                
+             </div>
+        
+            <div class="encriptado">
+                <img src="Img/not foundd.jpg" alt="Muñeca buscando" id="doll"/>
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
+                    <p id="parrafo"> Ingreasa el texto que quieres encriptar o desencriptar</p>
+                    <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+                </div>
+            </div> 
+        </div> 
+    </main>
+<footer>
+    <div class="footer">
+       <a href="https://github.com/ArletteMilova" target = "_blank" >
+       <img src="Img/github.png" alt="Logo Github" width="50px" class = "github"></a>
+    </div>
+    <div class = "mensaje-final">
+        <p>©Copyright 2024 - Arlette Milova </p>
+    </div>
+</footer>
+</body>
+<script src="app.js"></script>
+</html>
